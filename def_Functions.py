@@ -5,12 +5,11 @@ Created on Thu Sep  7 19:21:10 2023
 @author: christophernmiller
 
 """
-# 1 Write a function that asks the user their first name, last name and the city where they live.
-#Display the greeting that welcomes them with their first and last name and it includes the city from
-#where they live – i.e. Hello Bubba Jones from Kalispell.
-print("Welcome to Wake Yake Calculator 2.0!")
+print("Welcome to 2023 Calculator 2.0!")
 print("\n")
 
+
+# Greetings function - get input from user
 def Greetings():
     
     #inputs
@@ -21,21 +20,7 @@ def Greetings():
     # Display First Name Last Name with greetings
     print("Greetings " + fName + "   " + lName + " From " + cFrom + "   ")
 
-    
-# 2a. Where the main program provides the base and height and the function returns
-#the answer (like add2nums_a)
-
-def areaOfTriangle_a(ht,wd):
-    
-    # Veriables
-    ans = 0.0
-    
-    #Calculations
-    ans = 1.0/2.0 * ht * wd
-    
-    #Return Function
-    return ans
-# Q2_b
+# Recieve computer input - calculate response
 def areaOfTriangle_b(ht, wd):
     
     # variables
@@ -45,62 +30,45 @@ def areaOfTriangle_b(ht, wd):
     answer = 1.0/2.0 * ht * wd
 
     # print ans
-    print("area of triangle B is : " + str(answer))
-    
-    
-# Q2_c
+    print("area of Triangle B is : " + str(answer))
+
+# Recieve user iput calculate response
 def areaOfTriangle_c(ht,wd):
     
     # Veriables
-
     ans = 0.0
+
+    # user now gives inputs
     ht = float(input("Enter the Hieght: "))
     wd = float(input("Enter the Width: "))
-    # calculate
+
+    # calculate answer as ans
     ans = 1.0 / 2.0 * ht * wd
    
-    print("Area of Triangle C is: " + str(ans))
     # Display Answer
-    return ans
+    print("Area of Triangle C is: " + str(ans))
 
-# Q2_d 
-def areaOfTriangle_d():
-    
-    # variable
-    ht = 0.0
-    wd = 0.0
-    ans = 0.0
-
-    # ask for input
-    ht = float(input("Enter width: "))
-    wd = float(input("Enter Height: "))
-
-    # calculator
-    ans = 1.0 / 2.0 * ht * wd
-    
-    print("Area of triangle D: " + str(ans))
-
-    # return the answer
     return ans
     
-# Q3 Ask the user for a speed in mph and convert it knots. Display the answer.
+# Ask the user for a speed in mph and convert it knots.
 def mPHToKnots():
     
     print("Convert MPH to KNOTs - ")
     
-    #integers
+    # Integers
     MH = float(input("Your speed in MPH: "))
     K = 1.151
 
-     #calculate
+    # Calculate
     SP = ( MH / K )
     SP = round(SP, 2)
 
+    # Display the answer.
     print("Your Speed in Knots: " + str(SP))
     print("\n")
     
     
-# Q4 Ask the user for a speed in knots and convert it mph. Display the answer.
+# Ask the user for a speed in knots and convert it mph. 
 def kNotsToMPH():
     
     print("Calculate Knots to MPH")
@@ -113,11 +81,12 @@ def kNotsToMPH():
     SP2 = ( MP * K2 )
     SP2 = round(SP2, 2)
 
+    # Display the answer.
     print("Your Speed in MPH: " + str(SP2))
     print("\n")
 
 
-# Q5 Ask the user for three numbers, average the numbers and display the answer
+# Ask the user for three numbers, average the numbers.
 def mean1():
     print("Give three different numbers for there avverage")
 
@@ -131,23 +100,24 @@ def mean1():
     aNsw = ( N1 + N2 + N3 / N4)
     aNsw = round(aNsw, 2)
 
+    # display the answer
     print("The Average is:" + str(aNsw))
     print("\n")
     
-# Q6 Ask the user for the monthly salary and the number of months they have worked at that salary.
-#Calculate the gross pay for that time period and display the answer.
+# Ask the user for the monthly salary and the number of months they have worked at that salary.
 def gross():
     
     print("Colaculate your gross pay - ")
-    
     salary = float(input("Your current monthly pay: "))
     months = float(input("How many Months you have worked"))
     
-
+    # Calculate the gross pay for that time period.
     ans = salary * months
+
+    # display the answer.
     print("Your current gross pay is: " + str(ans))
     
-# Q7 Ask the user for a Fahrenheit temperature and convert it to Celsius. Display the answer
+# Ask the user for a Fahrenheit temperature and convert it to Celsius. 
 def frht():
     print("\nConvert Ferenheit to Celcius.")
     
@@ -162,12 +132,12 @@ def frht():
     celcius = (F - D) * A / B
     celcius = round(celcius, 2)
 
-    
+    # Display the answer
     print("Temprature in Celcius " + str(celcius))
     print("\n")
 
 
-# Q8 Five Celcius and convert to Fehrenheit
+# Five Celcius and convert to Fehrenheit
 def celciuse():
     print("Calculate temperature from Celcius to Ferhenheit")
 
@@ -181,26 +151,16 @@ def celciuse():
     frhn = (A2 / B2 * C2 + D2)
     frhn = round(frhn, 2)
 
+    # Display answer
     print("Temprature in Farhenheit: " + str(frhn))
     print("\n")
 
-    
+# run program    
 def main():
     
-
-#------------------Question 1---------------
+#------------------  Run Greetings  ---------------
     Greetings()
-#------------------Question 2a-d------------
-    # Q2a
-    # Veriables the main() program will previde
-    ht = 4.0
-    wd = 5.0
-    
-    ans = areaOfTriangle_a(ht,wd)    
-    print("Area of triangle A is: " + str(ans))
-    print("\n")
-    
-    # Q2b
+#------------------ Run Traiangles  ---------------
     ht = 4.0
     wd = 10.0
     
@@ -211,26 +171,24 @@ def main():
     areaOfTriangle_c(ht,wd)
     print("\n")
     
-    # Q2d
-    areaOfTriangle_d()
-    print("\n")
-    
-#-----------------Question 3-----------------
+#------------------ Calculate Speed  ---------------
+
     mPHToKnots()
     
-#-----------------Question 4-----------------
+#------------------ Calculate Speed   ---------------
+
     kNotsToMPH()
     
-#-----------------Question 5-----------------
+#------------------ Calculate 3 Number Mean  --------
     mean1()
     
-#-----------------Question 6-----------------
+#------------------ Calculate 3 Number Mean  --------
     gross()
     
-#-----------------Question 7-----------------
+#------------------  Fahrenheit to Celsius  ---------
     frht()
     
-#-----------------Question 8-----------------
+#------------------ Celsius to Fahrenheit  ----------
     celciuse()
 
 main()

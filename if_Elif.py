@@ -2,7 +2,8 @@
 """
 09/26/23
 Christopher Miller
-Assignment04
+
+if/elif Menu, Calulator and Game.
 
 """
 def playGame():
@@ -18,7 +19,6 @@ def playGame():
     if(choice == "1"):
         
         # left side
-   
         print("\nYou picked the shovel! Allowing you to dig your way twards" 
               "the escape.\n")
         print("You dig to another portion of the cave and find a small "
@@ -27,9 +27,11 @@ def playGame():
               "2) leave and Find cell Service.")
         print("\nType: 1/2")
         
+        # user gets two choises
         choice = input("enter 1 or 2: ")
         print("\n")
         
+        # if user input is 1
         if(choice == "1"):
             print("\nBOOOM!\n")
             print("some idiot droped a torch in the TNT room collapsing"
@@ -37,6 +39,7 @@ def playGame():
             
             print("Thanks For Playing")
 
+        # if user input is 2
         elif(choice == "2"):
             print("As you finally make it to sell serise and report what"
                   " happened the road gives from under you and you"
@@ -84,6 +87,7 @@ def playGame():
                 print("\nBye")
         else:
             return
+    # if user inputs anything else
     else:
         print("That wasn't a choice - good bye")
         return     
@@ -157,6 +161,7 @@ def menu1():
     
     choice = int(input("Enter 1 / 2: "))
     
+    # You can run an if statement in main
     if(choice == 1):
         playGame()
         
@@ -167,17 +172,20 @@ def menu1():
     else:
         print("*Error*")
         
+
+# Run main Program
 def main():
         
     print("\n")
     
     quit = "n"
     
+    # if quit does NOT equal Y
+    # Program continues at menu1
     while(quit != "y"):
         menu1()
         quit = input("Would you like to quit? y/n")
         
     print("\nBye")
     
-
 main()

@@ -2,31 +2,7 @@
 """
 Christopher Miller
 09/19/2023
-Assingment
-
-QUESTION 2
-
-Create a Shakespearean Insult Generator
-
-The generator takes one element / data chunk from each list and
-combines them to form the Shakespearean Insult.  
-
-For example -   List1 - artless
-                List2 - beef-witted
-                List3 - barnacle
-                Result - Thou is a artless beef-witted barnacle
-                
-Your program will have three modes.
-There is the automatically mode where the program  will randomly
-select one element from each column and combine them.  
-
-The second mode is the user is presented with each list one at a time
-and the user chooses one insult from each list. The program then puts
-them together.
-
-The third mode is where the user can add or delete an item
-from any list they choose.  Note you will need print the list so they can
-see the items.
+Random Insalt Generator
 
 **** PRINT THE LISTS USING A LOOP ****
 """
@@ -66,6 +42,7 @@ List3 = ['apple-john', 'baggage', 'barnacle', 'bladder', 'boar-pig',
 'mumble-news', 'nut-hook', 'pigeon-egg', 'pignut', 'puttock',
 'pumpion', 'ratsbane', 'scut', 'skainsmate', 'strumpet', 'varlot',
 'vassal', 'whey-face', 'wagtail']
+
 newList = []
 def insaultGenAuto():
     import random

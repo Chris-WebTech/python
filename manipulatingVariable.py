@@ -1,13 +1,15 @@
-#Joy and Beauty of Data
-#Assingment1.0
-#Christopher Miller
-#09/01/23
+# Joy and Beauty of Data
+# Christopher Miller
+# 09/01/23
+# Calculator 1.0
 
-
-#Q1 - Enter Your name
+# Recieve user Input
 print("Entire Your Name")
 
+# User First Name
 FN = input("First Name: ")
+
+# User Last Name
 LN = input("Last Name: ")
 
 print("\n")
@@ -15,10 +17,9 @@ print( "Hello " + FN + " " + LN)
 print("\n")
 print("Welcome To Yake Wake Calculator")
 print("\n")
-
- #-------------------
+#-------------------
  
-#Q2 - Give Fahrenheit temperature and convert it to Celsius
+#Given Fahrenheit temperature and convert it to Celsius
 print("Calculate Temprature from Farhenheit to Celcius")
 
 F = float(input("Temperature in Ferenheit: "))
@@ -36,7 +37,7 @@ print("Temprature in Celcius " + str(celcius))
 print("\n")
 
 
-#Q3 Five Celcius and convert to Fehrenheit
+# Given Celcius and convert to Fehrenheit
 print("Calculate temperature from Celcius to Ferhenheit")
 
 #integers
@@ -54,7 +55,7 @@ print("\n")
 
 #--------------------------------
 
-#Q4 Ask the user for a speed in mph and convert it knots
+# Ask the user for a speed in mph and convert it knots
 print("Calculate MPH to Knots")
 
 #integers
@@ -70,7 +71,7 @@ print("\n")
 
 #------------------------------------
 
-#Q5 Ask the user for a speed in knots and convert it mph
+# Ask the user for a speed in knots and convert it mph
 
 
 print("Calculate Knots to MPH")
@@ -88,7 +89,7 @@ print("\n")
 
 #--------------------------------------
 
-#Q6 Ask the user for three numbers, average the numbers
+# Ask the user for three numbers, average the numbers
 
 print("Give three different numbers for the avverage")
 
@@ -107,7 +108,7 @@ print("\n")
 
 #------------------------------------------
 
-#Q7  Ask the user for length, width, and thickness and calculate board feet in inches
+# Ask the user for length, width, and thickness and calculate board feet in inches
 print("Calculate Board Feet in Inches")
 
 #integers

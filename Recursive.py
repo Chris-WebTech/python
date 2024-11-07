@@ -2,9 +2,9 @@
 """
 Christopher Miller
 09/19/2023
-Assingment
+Number of Bottles of beer
 """
-def BOB(numBottles):
+def bottles(numBottles):
     
     if(numBottles > 0):
         temp = numBottles - 1
@@ -14,9 +14,9 @@ def BOB(numBottles):
         print(" Take one down pass it around " + 
               str(temp) + " bottles of beer on the Wall")
     
-        BOB(numBottles - 1)
+        bottles(numBottles - 1)
     
     
 def main():
-    BOB(100)
+    bottles(100)
 main()
