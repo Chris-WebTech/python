@@ -1,2 +1,2 @@
 # python
-python excelsis Fall 2023
+Python experience Fall 2023
